@@ -66,7 +66,7 @@ f(a+\epsilon) = 3(a+\epsilon)^2+(a+\epsilon) = 3(a^2+2a\epsilon+\epsilon^2)+a+\e
 \]
 由此我们找到极小值点
 \[
-x_{\min} = a = -\frac{1}{6} \text{，}
+x_{\min} = a = -\frac{1}{6} ,
 \]
 自然，如果我们求 \(f(x) = 3x^2 + x\) 的导数 \(f'(x) = 6x + 1\) 并令其为零，我们将得到相同的结果。对于普通的函数而言，变分法只是同一件事的不同方法而已%
 \footnote{译注：对于受微元法茶毒的物竞生而言，求导才是用来干这件事的不同方法。}%
@@ -122,7 +122,7 @@ S[q(t)]=\int {\mathcal L}~{\mathrm d}t
 我们目前有两套用以描述自然的理论框架。一套是{\bfseries 粒子理论(particle theory)}，用依赖于时间的粒子位置（即 \(\vec{q}=\vec{q}(t)\)）描述物理系统。由于我们并非必须使用笛卡尔坐标系%
 \mpar{例如，我们可以用球坐标系。}%
 ，所以我们使用字母\(q\)而不是\(x\)。对于这样的理论，拉格朗日量依赖于位置\(\vec{q}\)，速度\(\partial_t\vec{q}\)和时间\(t\)：%
-\footnote{译注：严格说来，依赖于坐标函数\(\vec{q}(t)\)，速度函数\(\partial_t\vec{q}(t)\)和时间\(t\).}
+\footnote{译注：严格说来，依赖于坐标函数\(\vec{q}(t)\)，速度函数\(\partial_t\vec{q}(t)\)和时间\(t\)。}
 \begin{equation}
 \label{equ4.3}
 {\mathcal L} = {\mathcal L} (\vec{q},\partial_t\vec{q},t)
@@ -133,7 +133,7 @@ S[q(t)]=\int {\mathcal L}~{\mathrm d}t
 另一套是{\bfseries 场论(field theory)}：使用场而不是独立粒子的位置\(q(t)\)来描述自然%
 \mpar{量子场论有一个特别优美的性质是关于如何引进粒子的。我们将在第\ref{chap6}章中看到场有能力产生和湮灭粒子。}%
 。在这套理论中，时空构成了场\(\Phi(\vec{x},t)\)表演的舞台。利用前面提到过的限制，我们得到%
-\mpar{这里我故意使用了不同的符号\({\mathscr L}\)，因为在场论中大多数时候我们都在和拉格朗日量密度\({\mathscr L}\)打交道。两者之间满足关系式\({\mathcal L} = \int{\mathrm d}^3\boldsymbol{x}~{\mathscr L}\).}
+\mpar{这里我故意使用了不同的符号\({\mathscr L}\)，因为在场论中大多数时候我们都在和拉格朗日量密度\({\mathscr L}\)打交道。两者之间满足关系式\({\mathcal L} = \int{\mathrm d}^3\boldsymbol{x}~{\mathscr L}\)。}
 \begin{equation}
 \label{equ4.4}
 {\mathscr L} = {\mathscr L} (\Phi(\vec{x},t), \partial_\mu \Phi(\vec{x},t), \vec{x}, t)
@@ -196,7 +196,7 @@ S = \int_{t_1}^{t_2} \rd t {\mathcal L}\left(q+\epsilon,\dot q + \dot \epsilon, 
 \label{equ4.6}
 \end{equation}
 为了更进一步，我们需要把 \(\epsilon(t)\) 挪出括号。这一步必不可少，因为 \(\epsilon(t)\) 是任意的变分，当其位于括号外时，只要总结果等于零，我们就知道括号里面一定等于零。目前，第一项与 \(\epsilon(t)\) 相乘，第二项与 \(\frac{\rd}{\rd t}\epsilon(t)\) 相乘。为了把 \(\epsilon(t)\) 挪出括号，我们需要去掉导数。为此，只需对最后一项进行分部积分%
-\mpar{分部积分是莱布尼兹律的直接推论，详见附录\ref{appendix.B.2}}%
+\mpar{分部积分是莱布尼兹律的直接推论，详见附录\ref{appendix.B.2}。}%
 ，从而得到
 \[
 \begin{gathered}
@@ -279,7 +279,7 @@ Noether 定理表示，拉格朗日量的每一个对称性都直接对应一个
 \[
 \delta S \rightarrow \delta S' = \delta S + \int_{t_1}^{t_2} {\rd t~\frac{\rd}{\rd t}\delta G} = \delta S + \underbrace{\left.\frac{\partial G}{\partial q} \delta q \right|_{t_1}^{t_2}}_{\mathclap{=0~\text{因为}~\delta q(t_1)=\delta q(t_2)=0}}.
 \]
-最后一步中用到了变分$\delta q$在初末时刻\footnote{译注：右侧删去了原文的一对括号，原文为$(t_1,t_2)$.}$t_1,t_2$为零。由此可知，拉格朗日量的变分$\delta {\mathcal L}$并非必须为零，而仅需满足一个更弱的条件
+最后一步中用到了变分$\delta q$在初末时刻\footnote{译注：右侧删去了原文的一对括号，原文为$(t_1,t_2)$。}$t_1,t_2$为零。由此可知，拉格朗日量的变分$\delta {\mathcal L}$并非必须为零，而仅需满足一个更弱的条件
 \begin{equation}
 \delta {\mathcal L} \overset{\text{!}}{=} \frac{\rd G}{\rd t}.
 \label{equ4.13}
@@ -298,7 +298,7 @@ Noether 定理表示，拉格朗日量的每一个对称性都直接对应一个
 \end{aligned}
 \label{equ4.15}
 \end{equation}
-利用欧拉-拉格朗日方程\mpar{\eqref{equ4.7}式：$\frac{\partial \mathcal L}{\partial q} = \frac{\rd}{\rd t} \left(\frac{\partial \mathcal L}{\partial \dot q}\right)$}重写\eqref{equ4.15}式，有
+利用欧拉-拉格朗日方程\mpar{\eqref{equ4.7}式：$\frac{\partial \mathcal L}{\partial q} = \frac{\rd}{\rd t} \left(\frac{\partial \mathcal L}{\partial \dot q}\right)$。}重写\eqref{equ4.15}式，有
 \[
 \rightarrow \delta {\mathcal L} =  -\frac{\rd}{\rd t} \left(\frac{\partial \mathcal L}{\partial \dot q}\right) \delta q - \frac{\partial \mathcal L}{\partial \dot q} \delta \dot q \overset{\text{!}}{=} \frac{\rd G}{\rd t}
 \]
@@ -313,7 +313,7 @@ Noether 定理表示，拉格朗日量的每一个对称性都直接对应一个
 由此得到了一个不随时间变化的物理量$J$：
 \begin{equation}
 \label{equ4.17}
-J = \frac{\partial \mathcal L}{\partial \dot q}\delta q + G\text{，}
+J = \frac{\partial \mathcal L}{\partial \dot q}\delta q + G,
 \end{equation}
 这是因为
 \[
@@ -339,7 +339,7 @@ m{\ddot{\vec{q}}} = 0 .
 由于${\mathcal L}=\frac{1}{2}m\dot{\vec{q}}^2$不依赖于$\vec{q}$，故此拉格朗日量在空间平移变换$\vec{q}\rightarrow\vec{q}'=\vec{q}+\vec{a}$不变($\delta{\mathcal L}=0$)，其中 $\vec{a}$ 表示某个常矢量。对应的守恒量写作\mpar{此处 $G = 0$，显然满足 \eqref{equ4.13} 式的条件。}\footnote{译注：使用了求和约定，见第\ref{chap3}章边注\hyperref[sidenote.3.129]{129}。}
 \begin{equation}
 \label{equ4.20}
-J_\text{trans} = \frac{\partial\mathcal L}{\partial \dot{\vec{q}}} \vec a = m {\dot{\vec{q}}} {\vec a} = \vec{p}\vec{a} \text{，}
+J_\text{trans} = \frac{\partial\mathcal L}{\partial \dot{\vec{q}}} \vec a = m {\dot{\vec{q}}} {\vec a} = \vec{p}\vec{a} ,
 \end{equation}
 其中$\vec{p}=m{\dot{\vec{q}}}$是经典力学中的{\bfseries 动量(momentum)}。由于等式$\frac{\rd J}{\rd t} = 0$对于任意$\vec a$都成立，所以说：{\bfseries 拉格朗日量的空间平移不变性导致了动量守恒。}
 
@@ -364,7 +364,7 @@ J_\text{rot} &= \frac{\partial {\mathcal L}(q_i, \dot q_i, t)}{\partial \dot q_i
 \label{equ4.22}
 \begin{aligned}
 \delta {\mathcal L} &= {\mathcal L}\left(q(t),\frac{\rd q(t)}{\rd t},t\right) - {\mathcal L}\left(q(t+\epsilon),\frac{\rd q(t+\epsilon)}{\rd t},t+\epsilon\right) \\
-&= -\frac{\partial \mathcal L}{\partial q}\frac{\partial q}{\partial t}\epsilon -\frac{\partial \mathcal L}{\partial\dot q}\frac{\partial\dot q}{\partial t}\epsilon -\frac{\partial\mathcal L}{\partial t}\epsilon \underbrace{=}_{\mathclap{\text{等式左端正好为全导数}}} -\frac{\rd \mathcal L}{\rd t}\epsilon \text{，}
+&= -\frac{\partial \mathcal L}{\partial q}\frac{\partial q}{\partial t}\epsilon -\frac{\partial \mathcal L}{\partial\dot q}\frac{\partial\dot q}{\partial t}\epsilon -\frac{\partial\mathcal L}{\partial t}\epsilon \underbrace{=}_{\mathclap{\text{等式左端正好为全导数}}} -\frac{\rd \mathcal L}{\rd t}\epsilon ,
 \end{aligned}
 \end{equation}
 这表明一般而言$\delta{\mathcal L} \ne 0$，但$G=-{\mathcal L}$满足\eqref{equ4.13}式给出的条件。
@@ -379,7 +379,7 @@ J_\text{rot} &= \frac{\partial {\mathcal L}(q_i, \dot q_i, t)}{\partial \dot q_i
 \label{equ4.24}
 \begin{aligned}
 \mathcal H &= \frac{\partial\mathcal L}{\partial\dot q}\dot q-{\mathcal L} = \underbrace{\left(\frac{\partial}{\partial\dot q}\frac{1}{2}m{\dot q}^2\right)}_{\mathclap{=m{\dot q}}}\dot q - \frac{1}{2}m{\dot q}^2 \\
- &= m{\dot q}^2 - \frac{1}{2}m{\dot q}^2 = \frac{1}{2}m{\dot q}^2 \text{，}
+ &= m{\dot q}^2 - \frac{1}{2}m{\dot q}^2 = \frac{1}{2}m{\dot q}^2 ,
 \end{aligned}
 \end{equation}
 正好是系统的动能。由于这里没有势场或外力，故动能就是总能量。能导出在外势场中运动的粒子的 Newton 第二定律$m\ddot q=-\frac{\partial V}{\partial q}$\footnote{\textcolor{red}{原文有误，已更正。}}的拉格朗日量是
@@ -403,7 +403,7 @@ J_\text{rot} &= \frac{\partial {\mathcal L}(q_i, \dot q_i, t)}{\partial \dot q_i
 作为粒子理论的总结，我们得到了如下关系：
 \begin{itemize}
 \item 空间平移不变性$\Rightarrow$动量守恒，
-\item 推动不变性\mpar{推动的另一个叫法是动量空间的平移，因为变换$q\rightarrow q+vt$使动量改变$m\dot q\rightarrow m(\dot q+v)$.}$\Rightarrow~\tilde{p}t-mq$守恒，
+\item 推动不变性\mpar{推动的另一个叫法是动量空间的平移，因为变换$q\rightarrow q+vt$使动量改变$m\dot q\rightarrow m(\dot q+v)$。}$\Rightarrow~\tilde{p}t-mq$守恒，
 \item 旋转不变性$\Rightarrow$角动量守恒，
 \item 时间平移不变性$\Rightarrow$能量守恒。
 \end{itemize}
@@ -434,9 +434,9 @@ Noether 定理向我们展示了，为什么这些概念%
 运用到拉格朗日量上有
 \begin{equation}
 \label{equ4.28}
-\delta {\mathscr L} = \frac{\partial\mathscr L}{\partial \Phi}\delta\Phi + \frac{\partial\mathscr L}{\partial(\partial_\mu \Phi)}\delta(\partial_\mu\Phi) + \frac{\partial\mathscr L}{\partial x_\mu}\delta x_\mu\text{，}
+\delta {\mathscr L} = \frac{\partial\mathscr L}{\partial \Phi}\delta\Phi + \frac{\partial\mathscr L}{\partial(\partial_\mu \Phi)}\delta(\partial_\mu\Phi) + \frac{\partial\mathscr L}{\partial x_\mu}\delta x_\mu,
 \end{equation}
-用欧拉-拉格朗日方程\mpar{\eqref{equ4.10}式：\\ $\frac{\partial \mathscr{L}}{\partial \Phi} = \partial_\mu \left( \frac{\partial \mathscr{L}}{\partial (\partial_\mu \Phi)} \right)$.}将其改写为
+用欧拉-拉格朗日方程\mpar{\eqref{equ4.10}式：\\ $\frac{\partial \mathscr{L}}{\partial \Phi} = \partial_\mu \left( \frac{\partial \mathscr{L}}{\partial (\partial_\mu \Phi)} \right)$。}将其改写为
 \begin{equation}
 \begin{aligned}
 \delta {\mathscr L} &= \partial_\mu\left(\frac{\partial\mathscr L}{\partial(\partial_\mu \Phi)}\right)\delta\Phi + \frac{\partial\mathscr L}{\partial(\partial_\mu \Phi)}\underbrace{\delta(\partial_\mu\Phi)}_{\mathclap{=\partial_\mu\delta\Phi}} + \frac{\partial\mathscr L}{\partial x_\mu}\delta x_\mu \\
@@ -470,7 +470,7 @@ x_\mu \rightarrow x'_\mu = x_\mu + \delta x_\mu = x_\mu + a_\mu
 
 由\eqref{equ4.31}式我们有$\delta x^\mu = a^\mu$，代入\eqref{equ4.33}式中可得\footnote{译者注：原文上下式的指标不平衡，现已修正。}
 \begin{equation}
--\partial_\nu\left(\frac{\partial\mathscr L}{\partial(\partial_\nu \Phi)}\frac{\partial\Phi}{\partial x^\mu} - \delta_\mu^\nu{\mathscr L}\right) a^\mu = 0 \text{，}
+-\partial_\nu\left(\frac{\partial\mathscr L}{\partial(\partial_\nu \Phi)}\frac{\partial\Phi}{\partial x^\mu} - \delta_\mu^\nu{\mathscr L}\right) a^\mu = 0 ,
 \label{equ4.34}
 \end{equation}
 我们定义能动张量
@@ -545,7 +545,7 @@ L_\text{orbit}^i = \frac{1}{2}\epsilon^{ijk}Q^{jk} = \frac{1}{2}\epsilon^{ijk} \
 \end{equation}
 称作场的{\bfseries 轨道角动量(orbital angular momentum)}\mpar{下标 orbit（轨道）的含义马上就会清楚，因为它实际上只是完整角动量的一部分，我们马上就会考虑另一部分。}。
 
-同样的，我们也有对应于推动的守恒量\mpar{请回忆推动生成元$K_i$和$M_{\mu\nu}$之间的关系：$K_i=M_{0i}$.}
+同样的，我们也有对应于推动的守恒量\mpar{请回忆推动生成元$K_i$和$M_{\mu\nu}$之间的关系：$K_i=M_{0i}$。}
 \begin{equation}
 Q^{0i}=\int \rd^3 \boldsymbol{x}~ \left(T^{0 0}x^i - T^{i 0}x^0\right)
 \label{equ4.47}
@@ -588,10 +588,10 @@ L^i = L_\text{spin}^i + L_\text{orbit}^i .
 \label{equ4.52}
 \end{equation}
 下拉格朗日量的不变性（${\delta \mathscr L}=0$），数学上表达为\footnote{译注：原文上下标混乱，已修改。}
-\begin{eqnarray}
+\begin{align}
 \delta {\mathscr L} &=& {\mathscr L}(\Phi_i,\partial_\mu\Phi_i) - {\mathscr L}(\Phi_i+\delta\Phi_i,\partial_\mu(\Phi_i+\delta\Phi_i) ) \nonumber\\
 &=& - \frac{\partial\mathscr L(\Phi_i,\partial_\mu\Phi_i)}{\partial \Phi_i}\delta\Phi_i - \frac{\partial\mathscr L(\Phi_i,\partial_\mu\Phi_i)}{\partial(\partial_\mu \Phi_i)}\partial_\mu\delta\Phi_i \overset{\text{!}}{=} 0, \label{equ4.53}
-\end{eqnarray}
+\end{align}
 因为变换是无穷小的，我们利用 Taylor 展开并只保留 $\delta \Psi_i$ 的一阶项，从而得到上式。由场的欧拉-拉格朗日方程\eqref{equ4.10}可知
 \[
 \frac{\partial \mathscr{L}}{\partial \Phi_i} = \partial_\mu \left( \frac{\partial \mathscr{L}}{\partial (\partial_\mu \Phi_i)} \right) .
@@ -608,7 +608,7 @@ L^i = L_\text{spin}^i + L_\text{orbit}^i .
 
 这意味着，如果拉格朗日量在变换$\Phi_i \rightarrow \Phi'_i = \Phi_i + \delta\Phi_i$下不变，那我们又得到一个称作 Noether 流的量
 \begin{equation}
-J^\mu \equiv \frac{\partial \mathscr{L}}{\partial (\partial_\mu \Phi_i)} \delta\Phi_i \text{，}
+J^\mu \equiv \frac{\partial \mathscr{L}}{\partial (\partial_\mu \Phi_i)} \delta\Phi_i ,
 \label{equ4.55}
 \end{equation}
 其满足连续性方程
@@ -640,7 +640,7 @@ J^\mu \equiv \frac{\partial \mathscr{L}}{\partial (\partial_\mu \Phi_i)} \delta\
 \label{equ4.60}
 \Phi'=e^{-\ri\epsilon \frac{\partial}{\partial \Phi}}\Phi=(1-\ri\epsilon \frac{\partial}{\partial \Phi}+\dots)\Phi \approx \Phi-\ri\epsilon
 \end{equation}
-对应的守恒量称作{\bfseries 共轭(conjugate)}动量$\Pi$。由\eqref{equ4.54}式与\eqref{equ4.57}式可得\mpar{\eqref{equ4.55}式的 $\delta\Psi$ 变为一个常数，无论 $\epsilon$ 是多少，共轭动量都守恒，因此其定义中不需要出现 $\epsilon$.}
+对应的守恒量称作{\bfseries 共轭(conjugate)}动量$\Pi$。由\eqref{equ4.54}式与\eqref{equ4.57}式可得\mpar{\eqref{equ4.55}式的 $\delta\Psi$ 变为一个常数，无论 $\epsilon$ 是多少，共轭动量都守恒，因此其定义中不需要出现 $\epsilon$。}
 \begin{align}
 \partial_t \Pi = 0 ~\rightarrow~ \partial_t \Pi = \partial_t\int\rd^3\boldsymbol{x}~J^0 = \partial_t\int\rd^3\boldsymbol{x}~\pi = 0 \nonumber \\
 \text{其中}~J^0 = \pi = \frac{\partial \mathscr{L}}{\partial (\partial_0 \Phi)}
@@ -682,7 +682,7 @@ p^i = T^{0i} = \frac{\partial\mathscr{L}}{\partial(\partial_0\Psi)} \frac{\parti
 的改变量
 \begin{align*}
 \delta {\mathcal L} &={\mathcal L}(q,\dot q,t)-{\mathcal L}(q',\dot q',t) =\frac{1}{2}m \dot q^2 - \frac{1}{2}m \dot q'^2\\
-&= \frac{1}{2}m \dot q^2 - \frac{1}{2}m (\dot q+v)^2 = -m\dot{q}v - \frac{1}{2}mv^2\text{，}
+&= \frac{1}{2}m \dot q^2 - \frac{1}{2}m (\dot q+v)^2 = -m\dot{q}v - \frac{1}{2}mv^2,
 \end{align*}
 等于如下函数的全导数%
 \mpar{$\frac{\rd G}{\rd t} =\frac{\rd}{\rd t}(-mqv -\frac{1}{2}mv^2 t)=-m\dot{q}v - \frac{1}{2}mv^2$，因为$v$和$m$都是常数。}
