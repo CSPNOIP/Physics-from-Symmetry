@@ -17,7 +17,7 @@
 \item 利用Lorentz群的矢量$(\tfrac{1}{2},\tfrac{1}{2})$表示给出Proca方程，在无质量极限下退化到著名的Maxwell方程组。
 \end{itemize}
 
-\section[Lorentz协变性与不变量]{Lorentz Covariance and Invariance \quad Lorentz协变性与不变量}\label{sec6.1}
+\section[Lorentz协变性与不变性]{Lorentz Covariance and Invariance \quad Lorentz协变性与不变性}\label{sec6.1}
 
 本章会导出粒子物理的标准模型（这是我们拥有的最好的物理理论）的基本运动方程。我们期待这些方程在所有的惯性系中都一样，否则每个可能的参考系都会有不同的方程，而狭义相对论中不存在特殊的参考系，因此这种理论是无用的。术语{\bfseries Lorentz 协变方程(Lorentz covariant equation)}的含义正是在所有惯性参考系中形式相同的方程。如果一个对象按照 Lorentz 群的一种给定表示变换，称其 Lorentz 协变。比如说，矢量$A_\mu$，按照$\left(\frac{1}{2},\frac{1}{2}\right)$表示变换，因此它是Lorentz协变的；这其实是说，Lorentz变换：$A_\mu \to A'_\mu$，$A_\mu, A'_{\mu}$实际是同一个对象（而非完全不同的）。另一方面，比如说，$A_1+A_3$就不是Lorentz协变的，因为它不按照Lorentz群的某种表示来变换。但这并不是说我们不知道它是如何变换的，因为它的变换规律可以简单地从$A_\mu$的变换规律得出，但是在不同的惯性系中它看起来完全不一样。经推动变换到另一个惯性系之后它看起来或许像$A_2+A_4$。只包含Lorentz协变对象的方程称为Lorentz协变方程，比如
 \[A_\mu+7B_\mu+C_\nu A^\nu D_\mu = 0 \]
@@ -44,7 +44,7 @@ S = \int d\mathbf{x} \mathscr{L}
 \end{align}
 得出，其中$d \mathbf{x}$可以理解为对时间和空间的积分。因此，诸如$\Phi\partial_\mu\partial^\mu\Phi$的项实际是没必要的，因为它等效于$\partial_\mu\Phi\partial^\mu\Phi$，从分部积分就可以直接看出\mpar{像往常一样，边界项为零，因为场在无穷远处为零。回想一下，这是因为在无穷远处不为零的场构型对应于无限的场能量，而这是非物理的（第\ref{sec4.5.2}节）。}。
 
-不仅如此，Lorentz{\bfseries 不变性}要求拉格朗日量必须是标量。因此，所有奇数阶的$\partial_\mu$，比如$\partial_\mu\Phi$不能出现。值得一提的是，如果常数，比如$a, c$，有Lorentz指标的话，这说明这些常数是一个$4$-矢量，指定了时空中一个特殊方向，从而破坏了空间各向同性假设。常数项实际上可忽略，也就是$A=0$，因为物理理论从欧拉-拉格朗日方程中导出，而拉格朗日量的常数项对运动方程没有影响\mpar{考虑\eqref{equ4.10}式：$\frac{\partial{\mathscr{L}}}{\partial\Phi}-\partial_\mu\left(\frac{\partial{\mathscr{L}}}{\partial(\partial_\mu\Phi)}\right) = 0$因此$\mathscr{L}\to\mathscr{L}+A$中的常数项$A$并不改变任何东西：$\frac{\partial({\mathscr{L}}+A)}{\partial\Phi}-\partial_\mu\left(\frac{\partial({\mathscr{L}}+A)}{\partial(\partial_\mu\Phi)}\right) = \frac{\partial{\mathscr{L}}}{\partial\Phi}-\partial_\mu\left(\frac{\partial{\mathscr{L}}}{\partial(\partial_\mu\Phi)}\right)$。}。除此之外，我们可以忽略掉$\Phi$的线性项，也就是$B=0$，因为从欧拉-拉格朗日方程中可以看出这一项只会给运动方程增加一个常数\mpar{$\mathscr{L}\to\mathscr{L}+B\Phi$给出\\$\frac{\partial(\mathscr{L}+B\Phi)}{\partial\Phi}-\partial_\mu\left(\frac{\partial(\mathscr{L}+B\Phi)}{\partial(\partial_\mu\Phi)}\right)=\frac{\partial\mathscr{L}}{\partial\Phi}-\partial_\mu\left(\frac{\partial{\mathscr{L}}}{\partial(\partial_\mu\Phi)}\right)+B=0$，运动方程中仅仅多出一个额外的常数。}。至少在自由场理论中，场的绝对大小没有意义，因此我们总是可以重新定义 $\Psi \rightarrow \Phi' = \Phi + \text{常数}$，这一常数不会出现在运动方程中\mpar{但请读者注意：如果场与其它场相互作用，情况就不再如此，因为这种场平移也会影响场之间的耦合项。在第\ref{sec7.3}节中，我们将在自发对称性破缺的背景下对此进行详细讨论。}。那么，剩下的项就是：
+不仅如此，Lorentz{\bfseries 不变性}要求拉格朗日量必须是标量。因此，所有奇数阶的$\partial_\mu$，比如$\partial_\mu\Phi$不能出现。值得一提的是，如果常数，比如$a, c$，有Lorentz指标的话，这说明这些常数是一个$4$-矢量，指定了时空中一个特殊方向，从而破坏了空间各向同性假设。常数项实际上可忽略，也就是$A=0$，因为物理理论从欧拉-拉格朗日方程中导出，而拉格朗日量的常数项对运动方程没有影响\mpar{考虑\eqref{equ4.10}式：$\frac{\partial{\mathscr{L}}}{\partial\Phi}-\allowbreak\partial_\mu\left(\frac{\partial{\mathscr{L}}}{\partial(\partial_\mu\Phi)}\right) = 0$因此$\mathscr{L}\to\mathscr{L}+A$中的常数项$A$并不改变任何东西：$\frac{\partial({\mathscr{L}}+A)}{\partial\Phi}-\partial_\mu\left(\frac{\partial({\mathscr{L}}+A)}{\partial(\partial_\mu\Phi)}\right) = \frac{\partial{\mathscr{L}}}{\partial\Phi}-\partial_\mu\left(\frac{\partial{\mathscr{L}}}{\partial(\partial_\mu\Phi)}\right)$。}。除此之外，我们可以忽略掉$\Phi$的线性项，也就是$B=0$，因为从欧拉-拉格朗日方程中可以看出这一项只会给运动方程增加一个常数\mpar{$\mathscr{L}\to\mathscr{L}+B\Phi$给出\\$\frac{\partial(\mathscr{L}+B\Phi)}{\partial\Phi}-\partial_\mu\left(\frac{\partial(\mathscr{L}+B\Phi)}{\partial(\partial_\mu\Phi)}\right)=\frac{\partial\mathscr{L}}{\partial\Phi}-\partial_\mu\left(\frac{\partial{\mathscr{L}}}{\partial(\partial_\mu\Phi)}\right)+B=0$，运动方程中仅仅多出一个额外的常数。}。至少在自由场理论中，场的绝对大小没有意义，因此我们总是可以重新定义 $\Phi \rightarrow \Phi' = \Phi + \text{常数}$，这一常数不会出现在运动方程中\mpar{但请读者注意：如果场与其它场相互作用，情况就不再如此，因为这种场平移也会影响场之间的耦合项。在第\ref{sec7.3}节中，我们将在自发对称性破缺的背景下对此进行详细讨论。}。那么，剩下的项就是：
 \begin{align}
 \label{equ6.3}
 \mathscr{L}=C\Phi^2+E\partial_\mu\Phi\partial^\mu\Phi
@@ -70,7 +70,7 @@ S = \int d\mathbf{x} \mathscr{L}
 \begin{split}
 0&=\frac{\partial\mathscr{L}}{\partial\Phi}-\partial_\mu\left(\frac{\partial\mathscr{L}}{\partial(\partial_\mu\Phi)}\right)\\
 \rightarrow0&=\frac{\partial}{\partial\Phi}\left(\frac{1}{2}(\partial_\mu\Phi\partial^\mu\Phi-m^2\Phi^2)\right)-\partial_\mu\left(\frac{\partial}{\partial(\partial_\mu\Phi)}\left(\frac{1}{2}(\partial_\mu\Phi\partial^\mu\Phi-m^2\Phi^2)\right)\right) \\
-\rightarrow0&=(\partial_\mu\partial^\mu+m^2)\Phi=0
+\rightarrow0&=(\partial_\mu\partial^\mu+m^2)\Phi
 \end{split}
 \end{align}
 
@@ -79,7 +79,7 @@ S = \int d\mathbf{x} \mathscr{L}
 \subsection[复Klein-Gordon场]{Complex Klein-Gordon Field \quad 复Klein-Gordon场}\label{sec6.2.1}
 
 %有点自作主张地改了$L$的字体，不知是否妥当。
-对于自旋$0$的场，我们可以不用标量场的复共轭构造Lorentz不变的拉格朗日量。然而对于自旋$\frac{1}{2}$场$\Psi$来说就不一样了，这会带来非常有趣的结果\mpar{剧透：每个自旋$\frac{1}{2}$的粒子都有反粒子。用复数场实际上就是同时考虑两个场，下文会解释。因此，Lorentz不变性迫使我们同时使用{\bfseries 两个}（紧密连接的）场，通常被解释为粒子和反粒子场。}。然而，没有什么能阻挡我们研究如下拉格朗日量
+对于自旋$0$的场，我们可以不用标量场的复共轭构造Lorentz不变的拉格朗日量。然而对于自旋$\frac{1}{2}$场$\Psi$来说就不一样了，这会带来非常有趣的结果\mpar{剧透：每个自旋$\frac{1}{2}$的粒子都有反粒子。用复数场实际上就是同时考虑两个场，下文会解释。因此，Lorentz不变性迫使我们同时使用{\bfseries 两个}（紧密相关的）场，通常被解释为粒子和反粒子场。}。然而，没有什么能阻挡我们研究如下拉格朗日量
 \[\mathscr{L}=\partial_\mu\phi^\dagger\partial^\mu\phi-m^2\phi^\dagger\phi \]
 这一拉格朗日量同样是 Lorentz 不变的，出现在很多教科书中。这实际上与同时考虑{\bfseries 两个}等质量标量场一样：
 \[\mathscr{L}=\frac{1}{2}\partial_\mu\phi_1\partial^\mu\phi_1-\frac{1}{2}m^2\phi_1^2+\frac{1}{2}\partial_\mu\phi_2\partial^\mu\phi_2-\frac{1}{2}m^2\phi_2^2 \]
@@ -179,9 +179,9 @@ I_4:=(\xi^a)^T\partial_\mu(\sigma^\mu)_{a\dot{b}}\xi^{\dot{b}}=(\xi_R)^\dagger\p
 \bar\Psi:=(\Psi)^\dagger\gamma_0
 \end{align}
 
-上文的讨论足以让我们使用 Dirac 旋量构造满足第 \ref{sec4.2} 节的限制\mpar{这些限制是：$\Psi$ 的阶数至多为 $2$，且仅包含最低阶非平凡 $\partial_\mu$，此处是 $1$ 阶的。}且 Lorentz 不变的 Lagrangian\footnote{译者注：这句话太绕口了。直接看英文会好点：Now we have everything we need to construct a Lorentz-invariant Lagrangian using Dirac spinors that is in agreement with the restrictions discussed in Section \ref{sec4.2}.}：
+上文的讨论足以让我们使用 Dirac 旋量构造满足第 \ref{sec4.2} 节的限制\mpar{这些限制是：$\Psi$ 的阶数至多为 $2$，且仅包含最低阶非平凡 $\partial_\mu$，此处是 $1$ 阶的。}且 Lorentz 不变的拉格朗日量\footnote{译者注：这句话太绕口了。直接看英文会好点：Now we have everything we need to construct a Lorentz-invariant Lagrangian using Dirac spinors that is in agreement with the restrictions discussed in Section \ref{sec4.2}.}：
 \[\mathscr{L}=A\Psi^\dagger\gamma_0\Psi+B\Psi^\dagger\gamma_0\gamma^\mu\partial_\mu\Psi=A\bar\Psi\Psi+ B\bar\Psi\gamma^\mu\partial_\mu\Psi\]
-代入常数($A=-m,B=i$)，我们得到了完整的{\bfseries Dirac拉格朗日量}
+代入常数($A=-m,B=i$)，我们得到了完整的{\bfseries Dirac拉格朗日量(Dirac-Lagrangian)}
 \begin{align}
 \label{equ6.16}
 \mathscr{L}_{\text{Dirac}}=-m\bar\Psi\Psi+ i\bar\Psi\gamma^\mu\partial_\mu\Psi=\bar\Psi(i\gamma^\mu\partial_\mu-m)\Psi
@@ -244,7 +244,7 @@ I_3=A^\mu A_\mu\quad &,\quad I_4=\partial^\mu A_\mu
 \[\partial_\sigma\left(\frac{\partial}{\partial(\partial_\sigma A^\rho)}(C_2\partial^\mu A^\nu\partial_\nu A_\mu)\right)=2C_2\partial^\rho(\partial_\sigma A^\sigma) \]
 因此，\eqref{equ6.19}的拉格朗日量得到的运动方程为
 \[2C_3A^\rho=2C_1\partial_\sigma\partial^\sigma A^\rho+2C_2\partial^\rho(\partial_\sigma A^\sigma) \]
-代入惯例的常数\mpar{也许你想知道为什么我们令 $C_1 = -C_2$。原因是：当 $C_1 = -C_2$ 时，\eqref{equ6.19}式中的 Lagrangian 量具有一种特殊的内禀对称性。这种对称性有助于我们讨论不同的场或粒子如何相互作用。第\ref{sec7.1.2}节及其后续内容将讨论这一点。}得到
+代入惯例的常数\mpar{也许你想知道为什么我们令 $C_1 = -C_2$。原因是：当 $C_1 = -C_2$ 时，\eqref{equ6.19}式中的拉格朗日量具有一种特殊的内禀对称性。这种对称性有助于我们讨论不同的场或粒子如何相互作用。第\ref{sec7.1.2}节及其后续内容将讨论这一点。}得到
 \begin{align}
 \label{equ6.21}
 \to m^2A^\rho=\partial_\sigma(\partial^\sigma A^\rho-\partial^\rho A^\sigma)

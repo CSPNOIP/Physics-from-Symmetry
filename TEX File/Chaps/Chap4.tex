@@ -10,7 +10,7 @@
 \newcommand\ri{\mathrm i}
 
 \chapter[理论框架]{The Framework 理论框架}\label{chap4}
-这一章的基本思路是，我们要通过使{\itshape 某些东西}取极小值，得到正确的关于自然的方程。{\itshape 某些东西}是什么？至少我们知道一件事：它不应该在 Lorentz 变换下改变，否则我们会在不同的参考系下得到不同的自然规律。在数学意义上，它意味着我们寻找的这个东西是个标量，按照 Lorentz 群的 \( (0,0) \) 表示进行变换。再加上到自然对简单规律的偏好，导出关于自然的方程绰绰有余。
+这一章的基本思路是，我们要通过使{\itshape 某些东西}取极小值，得到正确的关于自然的方程。{\itshape 某些东西}是什么？至少我们知道一件事：它不应该在 Lorentz 变换下改变，否则我们会在不同的参考系下得到不同的自然规律。在数学意义上，它意味着我们寻找的这个东西是个标量，按照 Lorentz 群的 \( (0,0) \) 表示进行变换。再加上到自然对简单规律的偏好，导出关于自然的方程绰绰有余。大自然喜欢简单。
 
 从这个想法出发，我们将会引入{\bfseries 拉格朗日形式(Lagrangian formalism)}。通过使理论的中心对象取极小值，可以得到用以描述问题中的物理系统的运动方程。极小化过程的结果被称作 {\bfseries 欧拉-拉格朗日方程(Euler-Lagrange equations)}。
 
@@ -32,8 +32,8 @@
 
 
 \begin{flushright}
-- Pierre de Maupertius
-\mpar{Recherche des loix du mouvement (1746)}
+- {\bfseries Pierre de Maupertius}
+\mpar{"Recherche des loix du mouvement" (1746)}
 \end{flushright}
 \end{quote}
 
@@ -96,7 +96,7 @@ S[q(t)]=\int {\mathcal L}~{\mathrm d}t
 
 有些人会宣称对理论所包含导数阶数的限制源于我们希望得到一个局域%
 \mpar{局域性是狭义相对论的基本假定，\ref{sec2.4}节已作阐述。}%
-理论，但这个要求仅会排除掉那些无穷阶导数。一个非局域相互作用有如下形式%
+理论，但这个要求仅会排除掉那些{\bfseries 无穷}阶导数。一个非局域相互作用有如下形式%
 \mpar{我们将会讨论粒子的拉格朗日理论：寻求粒子的路径；也会讨论场的拉格朗日理论：寻求场函数\(\Phi(x)\)。这将是下一节的主题。}
 \begin{equation}
 \label{equ4.1}
@@ -131,7 +131,7 @@ S[q(t)]=\int {\mathcal L}~{\mathrm d}t
 一个著名的拉格朗日量是\({\mathcal L} = \frac{1}{2}m\dot{\vec{q}}^2\)，它能导出经典力学中的 Newton 运动方程。在稍后将进行相当详细的讨论。
 
 另一套是{\bfseries 场论(field theory)}：使用场而不是独立粒子的位置\(q(t)\)来描述自然%
-\mpar{量子场论有一个特别优美的性质是关于如何引进粒子的。我们将在第\ref{chap6}章中看到场有能力产生和湮灭粒子。}%
+\mpar{粒子如何涌现出来是量子场论的一个非常优美的特征。我们将在第\ref{chap6}章中看到场有能力产生和湮灭粒子。}%
 。在这套理论中，时空构成了场\(\Phi(\vec{x},t)\)表演的舞台。利用前面提到过的限制，我们得到%
 \mpar{这里我故意使用了不同的符号\({\mathscr L}\)，因为在场论中大多数时候我们都在和拉格朗日量密度\({\mathscr L}\)打交道。两者之间满足关系式\({\mathcal L} = \int{\mathrm d}^3\boldsymbol{x}~{\mathscr L}\)。}
 \begin{equation}
@@ -184,18 +184,19 @@ S = \int_{t_1}^{t_2} \rd t {\mathcal L}\left(q+\epsilon,\dot q + \dot \epsilon, 
 \]
 与之前寻找函数最小值点的例子类似，此处我们要求线性依赖于变分\(\epsilon\)的项为零。由于我们处理的是一般的\(\mathcal L\)，故将其展开成 Taylor 级数%
 \mpar{我们使用的是这个公式的多变量形式，参见附录\ref{appendix.B.3}：
-\[
+\(
 \begin{aligned}
-{\mathcal L}\left(q+\epsilon,\dot q + \dot \epsilon, t\right) = {\mathcal L}(q,\dot q,t) + \\
+{\mathcal L}&\left(q+\epsilon,\dot q + \dot \epsilon, t\right) = {\mathcal L}(q,\dot q,t) \\ &+ 
+(q + \epsilon - q)\frac{\partial \mathcal{L}}{\partial q} + (\dot{q} + \dot\epsilon - \dot{q})\frac{\partial \mathcal{L}}{\partial \dot q} \\ &+ \dots \\ &= {\mathcal L}(q,\dot q,t) + 
 \epsilon\frac{\partial \mathcal{L}}{\partial q} + \dot\epsilon\frac{\partial \mathcal{L}}{\partial \dot q} + \dots
 \end{aligned}
-\]}%对原文公式有改动
+\)}%对原文公式有改动
 ，并令一阶项为零
 \begin{equation}
 \int_{t_1}^{t_2} \rd t ~ \left[ \epsilon(t) \frac{\partial \mathcal{L}}{\partial q} + \left( \frac{\rd}{\rd t} \epsilon(t) \right)\frac{\partial \mathcal{L}}{\partial \dot q} \right] \overset{\text{!}}{=} 0 .
 \label{equ4.6}
 \end{equation}
-为了更进一步，我们需要把 \(\epsilon(t)\) 挪出括号。这一步必不可少，因为 \(\epsilon(t)\) 是任意的变分，当其位于括号外时，只要总结果等于零，我们就知道括号里面一定等于零。目前，第一项与 \(\epsilon(t)\) 相乘，第二项与 \(\frac{\rd}{\rd t}\epsilon(t)\) 相乘。为了把 \(\epsilon(t)\) 挪出括号，我们需要去掉导数。为此，只需对最后一项进行分部积分%
+为了更进一步，我们需要把 \(\epsilon(t)\) 移出括号。这一步必不可少，因为 \(\epsilon(t)\) 是任意的变分，当其位于括号外时，只要总结果等于零，我们就知道括号里面一定等于零。目前，第一项与 \(\epsilon(t)\) 相乘，第二项与 \(\frac{\rd}{\rd t}\epsilon(t)\) 相乘。为了把 \(\epsilon(t)\) 移出括号，我们需要去掉导数。为此，只需对最后一项进行分部积分%
 \mpar{分部积分是莱布尼兹律的直接推论，详见附录\ref{appendix.B.2}。}%
 ，从而得到
 \[
@@ -237,8 +238,7 @@ S = \int \rd t~{\mathcal L} = \int{\mathrm d}^4\boldsymbol{x}~{\mathscr L}(\Phi^
 \label{equ4.9}
 \end{equation}
 依照上面讲过的步骤，我们可以得到场的运动方程组%
-\footnote{不对$i$求和。}
-\mpar{在这里用“组”字是因为对于每一个场分量\(\Phi^1,\Phi^2,\dots\)我们都可以得到一个方程。}%
+\mpar{\eqref{equ4.10}是一个方程组，这是因为对于每一个场分量\(\Phi^1,\Phi^2,\dots\)我们都可以得到一个方程。}%
 ：
 \begin{equation}
 \frac{\partial \mathscr{L}}{\partial \Phi^i} - \partial_\mu \left( \frac{\partial \mathscr{L}}{\partial (\partial_\mu \Phi^i)} \right)= 0.
@@ -397,7 +397,7 @@ J_\text{rot} &= \frac{\partial {\mathcal L}(q_i, \dot q_i, t)}{\partial \dot q_i
 \label{equ4.25}
 \tilde{J}_\text{boost} = \underbrace{pt-\frac{1}{2}mvt}_{\mathclap{\equiv \tilde{p}t}}-mq=\tilde{p}t-mq
 \end{equation}
-我们可以看到这个量依赖于时间零点，可以通过恰当的选取时间零点使其为零。由于这个量是守恒量，这个守恒律告诉我们零始终都是零。\footnote{译注：这个守恒率没有说的那么平庸，事实上，它等价于质心运动定理；\\ \textcolor{red}{~~~~~\,又注：该结果以及附录\ref{sec4.6}的推导有误，参见\hyperref[note:boost]{译注21}。}}
+我们可以看到这个量依赖于时间零点，可以通过恰当的选取时间零点使其为零。由于这个量是守恒量，这个守恒律告诉我们零始终都是零。\footnote{译注：这个守恒率没有说的那么平庸，事实上，它等价于质心运动定理；\\ \textcolor{red}{~~~~~\,又注：该结果以及附录\ref{sec4.6}的推导有误，参见\hyperref[note:boost]{译注20}。}}
 %修改完成后注意调整译注序号！
 
 作为粒子理论的总结，我们得到了如下关系：
@@ -420,7 +420,7 @@ Noether 定理向我们展示了，为什么这些概念%
 
 对于一个依赖于时空的场，完整的变换需要包含两个部分。我们将分别处理这两部分，首先来看$x$到$x'$的这一项。对于旋转来说，单由这一部分推出的守恒量并不会真的守恒，这是因为我们忽略了变换的第二部分（将场分量进行混合）。只有 $x \rightarrow x'$ 与 $\Psi \rightarrow \Psi'$ 给出的守恒量之和才是真正的守恒量。
 
-为了使上面这段论证更为具体，我们考虑一般的拉格朗日量密度${\mathscr L}\left(\Phi(x_\mu),\partial_\mu \Phi(x_\mu),x_\mu\right)$\footnote{译注：原文多出一左括号}。对称性意味着
+为了使上面这段论证更为具体，我们考虑一般的拉格朗日量密度${\mathscr L}\left(\Phi(x_\mu),\partial_\mu \Phi(x_\mu),x_\mu\right)$\footnote{译注：原文多出一左括号。}。对称性意味着
 \begin{equation}
 \label{equ4.26}
 {\mathscr L}\left(\Phi(x_\mu),\partial_\mu \Phi(x_\mu),x_\mu\right) = {\mathscr L}\left(\Phi'(x'_\mu),\partial_\mu \Phi'(x'_\mu),x'_\mu\right).
@@ -508,7 +508,7 @@ T_\mu^\nu : = \frac{\partial\mathscr L}{\partial(\partial_\nu \Phi)}\frac{\parti
 E &= \int\rd^3\boldsymbol{x}~T_0^0 \label{equ4.40}\\
 P_i &= \int\rd^3\boldsymbol{x}~T_i^0 \label{equ4.41}
 \end{align}
-其中$i=1,2,3$。它们分别称作系统的{\bfseries 总能量}——因{\bfseries 时间平移$x_0\rightarrow x_0+a_0$不变性}而守恒；场的{\bfseries 总动量}——因{\bfseries 空间平移$x_i\rightarrow x_i+a_i$不变性}而守恒。
+其中$i=1,2,3$。它们分别称作系统的{\bfseries 总能量} $E$——因{\bfseries 时间平移$x_0\rightarrow x_0+a_0$不变性}而守恒；场的{\bfseries 总动量} $P^i$——因{\bfseries 空间平移$x_i\rightarrow x_i+a_i$不变性}而守恒。
 
 \subsection{旋转和推动}\label{sec4.5.3}
 接下来，我们会仔细研究旋转和推动下的不变性。先从\eqref{equ4.30}式的第二项出发，随后讨论第一项的含义。我们将从第一项和第二项分别得到一个量，两项之{\bfseries 和}是守恒的。标量场没有可以混合的分量，故对于它而言第一项始终为零，即$S_{\mu\nu}=0$；也可以用\ref{sec3.7.4}节的结论解释：我们用标量作为 Lorentz 群一维表示的生成元。因此本节中推导出的守恒量正是标量场的完整守恒量。
@@ -589,26 +589,26 @@ L^i = L_\text{spin}^i + L_\text{orbit}^i .
 \end{equation}
 下拉格朗日量的不变性（${\delta \mathscr L}=0$），数学上表达为\footnote{译注：原文上下标混乱，已修改。}
 \begin{align}
-\delta {\mathscr L} &=& {\mathscr L}(\Phi_i,\partial_\mu\Phi_i) - {\mathscr L}(\Phi_i+\delta\Phi_i,\partial_\mu(\Phi_i+\delta\Phi_i) ) \nonumber\\
-&=& - \frac{\partial\mathscr L(\Phi_i,\partial_\mu\Phi_i)}{\partial \Phi_i}\delta\Phi_i - \frac{\partial\mathscr L(\Phi_i,\partial_\mu\Phi_i)}{\partial(\partial_\mu \Phi_i)}\partial_\mu\delta\Phi_i \overset{\text{!}}{=} 0, \label{equ4.53}
+\delta {\mathscr L} &= {\mathscr L}(\Phi^i,\partial_\mu\Phi^i) - {\mathscr L}(\Phi^i+\delta\Phi^i,\partial_\mu(\Phi^i+\delta\Phi^i) ) \nonumber\\
+&= - \frac{\partial\mathscr L(\Phi^i,\partial_\mu\Phi^i)}{\partial \Phi^i}\delta\Phi^i - \frac{\partial\mathscr L(\Phi^i,\partial_\mu\Phi^i)}{\partial(\partial_\mu \Phi^i)}\partial_\mu\delta\Phi^i \overset{\text{!}}{=} 0, \label{equ4.53}
 \end{align}
 因为变换是无穷小的，我们利用 Taylor 展开并只保留 $\delta \Psi_i$ 的一阶项，从而得到上式。由场的欧拉-拉格朗日方程\eqref{equ4.10}可知
 \[
-\frac{\partial \mathscr{L}}{\partial \Phi_i} = \partial_\mu \left( \frac{\partial \mathscr{L}}{\partial (\partial_\mu \Phi_i)} \right) .
+\frac{\partial \mathscr{L}}{\partial \Phi^i} = \partial_\mu \left( \frac{\partial \mathscr{L}}{\partial (\partial_\mu \Phi^i)} \right) .
 \]
 代入\eqref{equ4.53}式，我们得到
 \begin{equation*}
-\delta {\mathscr L} = - \partial_\mu \left( \frac{\partial \mathscr{L}}{\partial (\partial_\mu \Phi_i)} \right)\delta\Phi_i - \frac{\partial\mathscr L}{\partial(\partial_\mu \Phi_i)}\partial_\mu\delta\Phi_i = 0
+\delta {\mathscr L} = - \partial_\mu \left( \frac{\partial \mathscr{L}}{\partial (\partial_\mu \Phi^i)} \right)\delta\Phi^i - \frac{\partial\mathscr L}{\partial(\partial_\mu \Phi^i)}\partial_\mu\delta\Phi^i = 0
 \end{equation*}
 再使用莱布尼兹律，得到
 \begin{equation}
-\partial_\mu \left( \frac{\partial \mathscr{L}}{\partial (\partial_\mu \Phi_i)} \delta\Phi_i \right) = 0
+\partial_\mu \left( \frac{\partial \mathscr{L}}{\partial (\partial_\mu \Phi^i)} \delta\Phi^i \right) = 0
 \label{equ4.54}
 \end{equation}
 
-这意味着，如果拉格朗日量在变换$\Phi_i \rightarrow \Phi'_i = \Phi_i + \delta\Phi_i$下不变，那我们又得到一个称作 Noether 流的量
+这意味着，如果拉格朗日量在变换$\Phi_i \rightarrow \Phi'_i = \Phi_i + \delta\Phi_i$下不变\footnote{译者注：此处原文上下标不平衡，已更正。}，那我们又得到一个称作 Noether 流的量
 \begin{equation}
-J^\mu \equiv \frac{\partial \mathscr{L}}{\partial (\partial_\mu \Phi_i)} \delta\Phi_i ,
+J^\mu \equiv \frac{\partial \mathscr{L}}{\partial (\partial_\mu \Phi^i)} \delta\Phi^i ,
 \label{equ4.55}
 \end{equation}
 其满足连续性方程
@@ -647,7 +647,7 @@ J^\mu \equiv \frac{\partial \mathscr{L}}{\partial (\partial_\mu \Phi_i)} \delta\
 \label{equ4.61}
 \end{align}
 
-$\pi$ 称作{\bfseries 共轭动量密度}\mpar{这个相当抽象的量是量子场论最重要的记号之一，我们将在第\ref{chap6}章中看到这一点。}%
+$\pi$ 称作{\bfseries 共轭动量密度}\mpar{这个相当抽象的量是量子场论最重要的记号之一，我们将在第\ref{chap6}章中看到这一点。}。%
 注意，共轭动量密度与场的\textit{物理}动量密度不同，后者源自\textit{空间}平移 $\Psi(x) \rightarrow \Psi(x') = \Psi(x + \epsilon)$，由下式给出
 \[
 p^i = T^{0i} = \frac{\partial\mathscr{L}}{\partial(\partial_0\Psi)} \frac{\partial\Psi}{\partial x_i},
@@ -671,7 +671,7 @@ p^i = T^{0i} = \frac{\partial\mathscr{L}}{\partial(\partial_0\Psi)} \frac{\parti
 是一本非常适合学生阅读的书，详细解释了 Lagrange 框架在经典力学中的应用。
 \item {\bfseries Herbert Goldstein - Classical Mechanics}%
 \mpar{Herbert Goldstein, Charles P. Poole Jr., and John L. Safko. \textit{Classical Mechanics}. Addison-Wesley, 3rd edition, 6 2001. ISBN 9780201657029}%
-是经典力学的标准教材，其中有许多对拉格朗日体系非常好的解释。
+是经典力学的标准教材，其中有许多对拉格朗日形式非常好的解释。
 \end{itemize}
 \section[附录：粒子理论中的推动不变性与其守恒量]{Appendix: Conserved Quantity from Boost Invariance for Particle Theories\quad 附录：粒子理论中的推动不变性与其守恒量}\label{sec4.6}
 此附录中，我们想找到拉格朗日量 $\mathcal{L} = \frac12 m \dot{\vec{q}}^2$ 来自推动不变性的守恒量。一次推动变换是$q\rightarrow q'=q+\delta q=q+vt$，其中$v$代表恒定的速度。该拉格朗日量在推动下并不是不变的，但正如之前就看到过的，这并不是一个问题：\\
@@ -713,7 +713,7 @@ Q^{0i}=\int \rd^3 \boldsymbol{x}~ \left(T^{0 0}x^i - T^{i 0} x^0\right),
 \end{equation}
 即在\eqref{equ4.47}式中所导出的，利用了$K_i=M_{0i}$。
 
-我们怎样诠释这个守恒量呢？$Q^{0i}$是守恒的，意味着
+我们怎样诠释这个守恒量呢？$Q^{0i}$是守恒的，意味着\footnote{译者注：原文中下式有符号错误，已改正。}
 \begin{equation*}
 \begin{aligned}
 0= \frac{\partial Q^{0i}}{\partial t} &= \frac{\partial}{\partial t}\int \rd^3\boldsymbol{x}~T^{00}x^i - \underbrace{\int \rd^3 \boldsymbol{x}~ \frac{\partial T^{i0}}{\partial t} x^0}_{\mathclap{=x^0\frac{\partial}{\partial t}\int\rd^3 \boldsymbol{x}~ T^{i0}}} - \int \rd^3 \boldsymbol{x}~ T^{i 0} \underbrace{\frac{\partial x^0}{\partial t}}_{\mathclap{=1~\text{因为}~x^0=t} } \\
